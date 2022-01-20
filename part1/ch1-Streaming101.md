@@ -53,4 +53,4 @@
 # Reference
 - 람다 아키텍처: https://www.oreilly.com/library/view/stream-processing-with/9781491974285/ch01.html#fig-lambda-arch
 - 람다 아키텍처에 대한 의문: https://www.oreilly.com/radar/questioning-the-lambda-architecture/
-- 일관성 보장: 아파치 플링크로 하는 스트림 데이터 처리: 상태가 있는 스트림 데이터 분석, 파비안 휴스케, 바실리키 칼라브리
+- 일관성 보장: 아파치 플링크로 하는 스트림 데이터 처리 (파비안 휴스케, 바실리키 칼라브리)
