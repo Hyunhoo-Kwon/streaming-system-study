@@ -49,6 +49,7 @@
     - 지금까지 살펴본 보장 방식은 스트리밍 처리기가 관리하는 애플리케이션의 상태를 보장한다. 그러나 실제 스트리밍 애플리케이션에서는 스트리밍 처리 외에 최소 하나의 소스와 싱크를 갖고 있을 것이다. 단대단 보장은 전체 데이터 처리 파이프라인에 걸친 결과의 정확성을 의미한다. 각 컴포넌트가 각자 상태를 보장하는 방법을 완벽히 제공하더라도 전체 파이프라인의 단대단 보장을 제공하기는 쉽지 않다.
 
 ##### 시간 판단 도구(tools for reasoning about time)
+시간 판단 도구는 다양한 이벤트 시간 왜곡이 발생하는 상황에서 무한 비순서 데이터(unbounded unordered data)를 처리할 때 반드시 필요하다.
 
 # Reference
 - 람다 아키텍처: https://www.oreilly.com/library/view/stream-processing-with/9781491974285/ch01.html#fig-lambda-arch
