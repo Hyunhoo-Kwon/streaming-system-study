@@ -3,5 +3,5 @@
 
 ## 목차
 Part 1. 빔 모델
-- Ch1. [스트리밍 101](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md)
-- Ch2. 데이터 처리의 무엇을, 어디서, 언제, 어떻게
+- Ch1. [스트리밍 101](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/1.%20Streaming%20101.md)
+- Ch2. [데이터 처리의 무엇을, 어디서, 언제, 어떻게](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/2.%20The%20What%2C%20Where%2C%20When%2C%20and%20How%20of%20Data%20Processing.md)
