@@ -85,6 +85,16 @@
 <img src = "http://streamingbook.net/static/images/figures/stsy_0102.png" width="50%" height="50%">
 
 ### 무한 데이터: 배치
+배치 시스템으로 무한 데이터셋을 처리하기 위해서는 무한 데이터를 배치 처리에 적합한 유한 데이터셋의 집합으로 분할하는 것이 중요하다.
+
+##### 고정 윈도우
+배치 엔진을 반복 실행해 무한 데이터셋을 처리하는 가장 일반적인 방법은 그림처럼 입력 데이터를 고정된 크기의 윈도우(fixed window, tumbling window)로 나눈 후 각 윈도우를 분리된 유한 데이터 소스인 것처럼 처리하는 것이다. 그러나 여전히 해결해야 하는 데이터 입력이 완결됐음을 알리는 완결성(completeness)의 문제가 남아 있다. 결국 모든 이벤트 수집을 확인할 때까지 처리를 지연하거나, 데이터가 늦게 도착하면 소속될 윈도우에 대해 전체 배치를 재실행하는 등의 방법으로 이런 문제의 영향을 완화한다.
+
+<img src = "http://streamingbook.net/static/images/figures/stsy_0103.png" width="50%" height="50%">
+
+##### 세션
+
+<img src = "http://streamingbook.net/static/images/figures/stsy_0104.png" width="50%" height="50%">
 
 ### 무한 데이터: 스트리밍
 
