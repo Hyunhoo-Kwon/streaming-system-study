@@ -93,10 +93,22 @@
 <img src = "http://streamingbook.net/static/images/figures/stsy_0103.png" width="50%" height="50%">
 
 ##### 세션
+배치 엔진을 사용해 무한 데이터를 세션(session)처럼 더 정교한 윈도우 전략으로 처리하고자 한다면 접근 방식을 더욱 상세하게 나눌 수 있다. 세션은 보통 세션의 활동 기간(activity)으로 정의되며, 일정 크기의 세션의 비활동 간격(inactivity gap)이 따라오면 끝나는 것으로 볼 수 있다. 일반적인 배치 엔진을 사용해 세션을 계산하면 그림처럼 여러 배치로 나뉘어진 세션이 나타날 수 있다. 이전 배치에 나온 세션을 묶어주기 위한 로직이 필요하지만 이는 복잡도가 증가한다. 따라서 고전적인 배치 엔진을 사용해 세션을 계산하는 것은 바람직하지 않다.
 
 <img src = "http://streamingbook.net/static/images/figures/stsy_0104.png" width="50%" height="50%">
 
 ### 무한 데이터: 스트리밍
+스트리밍 시스템은 무한 데이터 처리를 위해 제작됐다. 스트리밍 시스템이 다루는 데이터는 다음과 같은 특성을 갖는다.
+- 무한 데이터
+- 이벤트 시간 기준으로 데이터의 순서가 뒤섞여 있어 이벤트 시간을 기준으로 처리하려면 파이프라인에서 시간 기반의 셔플을 수행해야 하는 데이터
+- 다양한 형태의 이벤트 타임 왜곡이 발생해 상수 시간 범위 안에 주어진 이벤트 시간의 대부분의 데이터를 봤다고 확신할 수 없는 데이터
+
+이와 같은 특성의 데이터를 다룰 때 취할 수 있는 몇 가지 접근법이 있다. 우리는 보통 이를 시간 무시(time-agnostic), 근사(approximation), 처리 시간 윈도우(processing time window), 이벤트 시간 윈도우(event time window)의 네 가지로 분류한다.
+
+##### 시간 무시(time-agnostic)
+##### 근사(approximation)
+##### 처리 시간 윈도우(processing time window)
+##### 이벤트 시간 윈도우(event time window)
 
 # Reference
 - 람다 아키텍처: https://www.oreilly.com/library/view/stream-processing-with/9781491974285/ch01.html#fig-lambda-arch
