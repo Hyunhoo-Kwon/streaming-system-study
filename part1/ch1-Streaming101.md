@@ -2,9 +2,9 @@
 1. [스트리밍 101](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#1%EC%9E%A5-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D-101)
     1. [용어: 스트리밍이란?](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EC%9A%A9%EC%96%B4-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D%EC%9D%B4%EB%9E%80)
         1. [심하게 과장된 스트리밍의 한계](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EC%8B%AC%ED%95%98%EA%B2%8C-%EA%B3%BC%EC%9E%A5%EB%90%9C-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D%EC%9D%98-%ED%95%9C%EA%B3%84)
-        2. [이벤트 시간 대 처리 시간]()
-    3. [데이터 처리 패턴]()
-
+        2. [이벤트 시간 대 처리 시간](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8B%9C%EA%B0%84-%EB%8C%80-%EC%B2%98%EB%A6%AC-%EC%8B%9C%EA%B0%84)
+    3. [데이터 처리 패턴](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B2%98%EB%A6%AC-%ED%8C%A8%ED%84%B4)
+---
 
 # 1장. 스트리밍 101
 ##### 왜 스트리밍 데이터 처리가 주목받을까?
@@ -60,6 +60,15 @@
 시간 판단 도구는 다양한 이벤트 시간 왜곡이 발생하는 상황에서 무한 비순서 데이터(unbounded unordered data)를 처리할 때 반드시 필요하다.
 
 ### 이벤트 시간 대 처리 시간
+무한 데이터 처리에 대해 이야기하려면 시간 영역에 대한 명확한 이해가 우선돼야 한다. 모든 데이터 처리 시스템에는 일반적으로 다음 두 형태의 시간 영역이 있다.
+- 이벤트 시간(event time): 이벤트가 실제 발생한 시간
+- 처리 시간(processing time): 이벤트가 처리 시스템에서 관측된 시간
+
+이벤트 시간을 이용해 처리하면 데이터의 순서가 바뀌더라도 결과의 정확성을 보장할 수 있다. 따라서 시간에 따른 사용자 행동의 특성을 분석하거나 결제 관련 서비스나 이상 징후 감지 등의 경우에 이벤트 시간은 중요하다. 그러나 늦게 도착한 이벤트나 이벤트의 순서를 고려하지 않는다면 처리 시간을 사용할 수 있다.
+
+이상적인 상황이라면, 어떤 사건이 발생한 즉시 처리될 것이기 때문에 이벤트 시간과 처리 시간은 동일해야 한다. 하지만 현실에서는 두 시간 사이의 시간 왜곡이 0이 아닐 뿐만 아니라, 다양한 요소를 반영한 매우 가변적인 함수 형태가 된다.
+
+![그림1-1](http://streamingbook.net/fig/1-1)
 
 ## 데이터 처리 패턴
 
