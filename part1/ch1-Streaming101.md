@@ -4,6 +4,9 @@
         1. [심하게 과장된 스트리밍의 한계](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EC%8B%AC%ED%95%98%EA%B2%8C-%EA%B3%BC%EC%9E%A5%EB%90%9C-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D%EC%9D%98-%ED%95%9C%EA%B3%84)
         2. [이벤트 시간 대 처리 시간](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8B%9C%EA%B0%84-%EB%8C%80-%EC%B2%98%EB%A6%AC-%EC%8B%9C%EA%B0%84)
     3. [데이터 처리 패턴](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B2%98%EB%A6%AC-%ED%8C%A8%ED%84%B4)
+        1. [유한 데이터](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EC%9C%A0%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0)
+        2. [무한 데이터: 배치](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EB%AC%B4%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B0%B0%EC%B9%98)
+        3. [무한 데이터: 스트리밍](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EB%AC%B4%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D)
 ---
 
 # 1장. 스트리밍 101
@@ -73,6 +76,9 @@
 정확성과 이벤트 시간이 중요한 경우라면, 처리 시간으로 윈도우를 나누면 안 되며, 이벤트 시간으로 윈도우를 나눠야 한다. 지금까지 살펴본 이벤트 시간 윈도우에서 중요한 점 하나를 간과했다. 언제 이벤트 시간 윈도우의 완결 시점을 결정할 수 있을까? 다시 말해 어떤 시점 전에 발생한 모든 이벤트가 도착한 것을 확신하기까지 얼마나 많은 시간을 기다려야 할까? 현실적으로 명확히 결정하는 것은 불가능하다.
 
 ## 데이터 처리 패턴
+##### 일반적인 데이터 처리 패턴은?
+배치와 스트리밍 두 형태의 엔진에서 유한/무한 두 처리 유형을 살펴보자 (마이크로배치 방식은 스트리밍으로 묶어서 다룬다).
+
 ### 유한 데이터
 ### 무한 데이터: 배치
 ### 무한 데이터: 스트리밍
