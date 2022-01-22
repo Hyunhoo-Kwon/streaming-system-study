@@ -1,3 +1,11 @@
+## 목차
+1. [스트리밍 101](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#1%EC%9E%A5-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D-101)
+    1. [용어: 스트리밍이란?](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EC%9A%A9%EC%96%B4-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D%EC%9D%B4%EB%9E%80)
+        1. [심하게 과장된 스트리밍의 한계](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/ch1-Streaming101.md#%EC%8B%AC%ED%95%98%EA%B2%8C-%EA%B3%BC%EC%9E%A5%EB%90%9C-%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D%EC%9D%98-%ED%95%9C%EA%B3%84)
+        2. [이벤트 시간 대 처리 시간]()
+    3. [데이터 처리 패턴]()
+
+
 # 1장. 스트리밍 101
 ##### 왜 스트리밍 데이터 처리가 주목받을까?
 오늘날 빅데이터 분야에서는 왜 스트리밍 데이터 처리가 주목받고 있을까? 스트리밍으로 빠르게 결과를 얻을 수 있으며, 무한 데이터셋(unbounded dataset)을 다룰 수 있도록 설계되어 끝없이 입력되는 데이터를 더욱 쉽게 처리할 수 있다.
@@ -50,6 +58,10 @@
 
 ##### 시간 판단 도구(tools for reasoning about time)
 시간 판단 도구는 다양한 이벤트 시간 왜곡이 발생하는 상황에서 무한 비순서 데이터(unbounded unordered data)를 처리할 때 반드시 필요하다.
+
+### 이벤트 시간 대 처리 시간
+
+## 데이터 처리 패턴
 
 # Reference
 - 람다 아키텍처: https://www.oreilly.com/library/view/stream-processing-with/9781491974285/ch01.html#fig-lambda-arch
