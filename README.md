@@ -7,4 +7,4 @@ Part 1. 빔 모델
 - Ch2. [데이터 처리의 무엇을, 어디서, 언제, 어떻게](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/2.%20The%20What%2C%20Where%2C%20When%2C%20and%20How%20of%20Data%20Processing.md)
 - Ch3. [워터마크](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/3.%20Watermarks.md)
 - Ch4. 고급 윈도우
-- Ch5. '정확히 한 번'보장과 부작용
+- Ch5. '정확히 한 번' 보장과 부작용
