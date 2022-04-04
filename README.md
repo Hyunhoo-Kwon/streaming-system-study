@@ -8,3 +8,6 @@ Part 1. 빔 모델
 - Ch3. [워터마크](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part1/3.%20Watermarks.md)
 - Ch4. 고급 윈도우
 - Ch5. '정확히 한 번' 보장과 부작용
+
+Part 2. 스트림과 테이블
+- Ch6. [스트림과 테이블](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part2/6.%20Streams%20and%20Tables.md)
