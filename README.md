@@ -12,3 +12,4 @@ Part 1. 빔 모델
 Part 2. 스트림과 테이블
 - Ch6. [스트림과 테이블](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part2/6.%20Streams%20and%20Tables.md)
 - Ch7. [영구적 저장 상태의 실용성](https://github.com/Hyunhoo-Kwon/streaming-system-study/blob/main/part2/7.%20The%20Practicalities%20of%20Persistent%20State.md)
+- Ch8. 스트리밍 SQL
